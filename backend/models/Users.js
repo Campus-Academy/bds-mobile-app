@@ -8,29 +8,33 @@ var userSchema = new Schema({
   _id: Schema.Types.ObjectId,
   firstName: {
     type: String,
-    maxlength: 255,
-    required: true
+    maxlength: 255
   },
   lastName: {
     type: String,
-    maxlength: 255,
-    required: true
+    maxlength: 255
   },
+  adress: String,
   birthday: String,
+  gender: String,
+  telephone: {
+    type: String,
+    maxlength: 255,
+    trim: true
+  },
   mail: {
     type: String,
     maxlength: 255,
-    trim: true,
-    required: true
+    trim: true
   },
   password: {
     type: String,
     maxlength: 255,
-    trim: true,
-    required: true
+    trim: true
   },
+  promotion: Schema.Types.ObjectId,
   role : String,
-
+  sport : String,
 }, { versionKey: false, collection: 'User' });
 
 module.exports = mongoose.model('User', userSchema);

@@ -2,6 +2,8 @@
  * Exporte les différents modèles de classes
  */
 module.exports = {
-    User: require("./User")
+    User: require("./Users"),
+    New: require("./News"),
+    Event: require("./Events")
 }
 
