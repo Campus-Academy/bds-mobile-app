@@ -199,3 +199,4 @@ Et pour y accéder, React crée automatiquement une variable d'environnement acc
 
 - VS Code + exentions : React + Liveshare
 - Chrome + extension : React devtools
+- Expo GO (App mobile)
