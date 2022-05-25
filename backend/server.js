@@ -34,6 +34,10 @@ db.once('open', function() {
 ////////Redirection of the URLs to the corresponding data access file////////
 app.use('/users', require('./routes/user'))
 
+app.use('/events', require('./routes/event'))
+
+app.use('/news', require('./routes/new'))
+
 
 const port = process.env.PORT || process.env.API_PORT || 3007;
 
